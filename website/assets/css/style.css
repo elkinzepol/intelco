@@ -1,12 +1,3 @@
-/*   
-Theme Name: psFree
-Theme URI: 
-Author: Koval Web
-Author URI: https://www.templatemonster.com/vendors/kovalweb/
-Description: Free HTML Website Template
-Tags: html5, css3, bootstrap grid
-Version: 1.0
-*/
 :root {
     --font-family: "Istok Web";
     --font-size: 16px;
@@ -16,11 +7,11 @@ Version: 1.0
     --heading-font-family: "Montserrat";
     --heading-line-height: 1.3;
     --heading-font-weight: 700;
-    --main-color: #186ADC;
-    --el-gradient1: #1859B4;
-    --el-gradient2: #0467F1;
+    --main-color: #3a3b92;
+    --el-gradient1: #7576a5;
+    --el-gradient2: #5e5abc;
     --primary-color: #ffffff;
-    --primary-bg-color: #F0F4F8;
+    --primary-bg-color: #abaabba3;
     --text-primary: #303036;
     --text-secondary: #63636b;
     --border-color: #D4D4E1;
@@ -1360,8 +1351,9 @@ textarea {
 /* 3.1 Intro */
 .intro {
     position: relative;
-    min-height: 31.25rem;
     z-index: 1;
+    width: 100%;
+    min-height: 90vh;
 }
 
 .intro-slider,
@@ -1369,6 +1361,12 @@ textarea {
     display: block;
     min-height: 40rem;
     overflow: hidden;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+
 }
 
 .intro-item {
@@ -1379,14 +1377,15 @@ textarea {
     color: var(--text-primary);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    background-color: var(--primary-color);
     width: 100%;
+    min-height: 90vh;
 }
 
 .intro-item .container {
     position: relative;
     z-index: 3;
+    width: 100%;
+    min-height: 90vh;
 }
 
 .intro-item::after {
@@ -1396,9 +1395,10 @@ textarea {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--primary-color);
-    opacity: 0.7;
+    background-color: var(--primary-bg-color);
+    opacity: 0.8;    
 }
+    
 
 .intro-item .section-desc {
     max-width: 100%;
@@ -1406,8 +1406,11 @@ textarea {
 
 .intro-content {
     width: 100%;
+    min-height: 100vh;
     max-width: 25rem;
+    align-items: center;
     padding: 0 0 3.75rem 0;
+    padding-top: 5rem;
 }
 
 .intro-btns {
@@ -1439,8 +1442,8 @@ textarea {
     }
 
     .intro-item::after {
-        background-color: var(--primary-color);
-        opacity: 0.8;
+        background-color: var(--primary-bg-color);
+        opacity: 0.8;    
     }
 }
 
@@ -1463,7 +1466,7 @@ textarea {
 /* 3.2 Icon items */
 .iitem {
     display: block;
-    text-align: center;
+    text-align:left;
     padding: 1.5rem;
     text-decoration: none;
     transition: box-shadow 0.2s, background-color 0.2s, color 0.2s;
@@ -1567,6 +1570,7 @@ textarea {
 }
 
 .iitem-heading {
+    text-align: center;
     margin-bottom: 1rem;
     font-weight: bold;
 }
@@ -3344,6 +3348,8 @@ body.mmm-open .mmm {
 
 .section-heading {
     margin-bottom: 3.25rem;
+    font-size: 20px;
+    align-items: center;
 }
 
 .section-heading h1, .section-heading h2, .section-heading h3 {
